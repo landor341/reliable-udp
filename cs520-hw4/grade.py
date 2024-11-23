@@ -22,7 +22,7 @@ def run_test_case(case: TestCase) -> TestResult:
     half_credit_time = case.secs * 2.25
     start_time = time.time()
 
-    test_args = ["python3.6", "tester.py", "--file", case.args.file, "--loss",
+    test_args = ["python", "tester.py", "--file", case.args.file, "--loss",
                  case.args.loss, "--delay", case.args.delay]
 
     try:
